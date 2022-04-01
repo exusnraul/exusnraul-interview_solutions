@@ -279,3 +279,8 @@ select * from employee where salary >(select salary from employee partition by s
 select * from employee self join employee as e on employee  where salary=salary and id
 '''
 
+'''
+Questions(Persistant)
+SSL,HTTPS,Handshake,API Headers and Responses,How a request response cycle works on the whole,
+'''
+
