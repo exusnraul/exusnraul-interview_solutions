@@ -1,45 +1,3 @@
-import time
-
-# while True:
-#     print('Hello World')
-#     time.sleep(5)
-
-
-l1=[10,20,10,30,40,10,20]
-l2=[]
-for item in l1:
-    if item not in l2:
-        l2.append(item)
-
-print(l2)
-a={}
-for item in l1:
-    c=l1.count(item)
-    if item not in a.keys():
-        a[item]=c
-
-print(a)
-
-'''
-str1="he is anand and anand is from blore. and  Anand is good in python"
-write a code to identify how many anand is there
-'''
-str1="he is anand and anand is from blore. and  Anand is good in python"
-list_str=[x.lower() for x in str1.split(' ')]
-print(list_str.count('anand'))
-
-list_num=[1,4,6,7,212,435,76,87,3,123]
-lis2=[]
-while list_num:
-    max_num=list_num[0]
-    for i in list_num:
-        if max_num<i:
-            max_num=i
-    list_num.remove(max_num)
-    lis2.append(max_num)
-
-print(lis2[2])
-
 nums = [3,2,4]
 target = 5
 
@@ -119,7 +77,7 @@ employee
     give departments with total Annual salary more than 1CR, for  people in range of age 30 to 35 and gender male.
 '''
 
-# select department from employee where salary > '1cr' Group by department on employee having age between (30,35)  
+# select department from employee where salary > '1cr' Group by department having age between (30,35)  
 
 
 inp='Immo sit sane nihil melius, inquam-nondum enim id quaero-, num propterea idem voluptas est, quod, ut ita dicam, indolentia?'
@@ -271,16 +229,65 @@ print(second)
 
 
 ''''
-emloyee - id,name,det,salary
+emloyee - id,name,dept,salary
 
 
 select * from employee where salary >(select salary from employee partition by salary where salary>avg(salary))
 
 select * from employee self join employee as e on employee  where salary=salary and id
 '''
-
 '''
 Questions(Persistant)
 SSL,HTTPS,Handshake,API Headers and Responses,How a request response cycle works on the whole,
 '''
+# Wipro
+'''input = aaabbbaabbcc
+output = 3a3b2a2b2c'''
+input = 'aaabbbaabbcc' #Not Completed
+# def func1(inp):
+#     count=1
+#     op=''
 
+#     val=inp[0]
+#     for i in range(len(inp)):
+#         for j in range(i+1,len(inp)):
+#             if inp[i]==inp[j]:
+#                 count+=1
+            
+#             else:op+str(count)+inp[i]
+
+#     return op
+
+# print(func1(input))
+inp="abc def abd jgk abc gkjgk def abc"
+
+# op={"abc":3, "def":2, "abd":1, ...}
+# print(inp.split(' '))
+
+def func2(inp):
+    if isinstance(inp,str):
+        temp=inp.split(' ')
+    elif isinstance(inp,list):
+        temp=inp
+    else:
+        raise ValueError("Input Only String or Lists as an input")
+    op={}
+    for item in temp:
+        if item not in op:
+            op[item]=temp.count(item)
+        
+    return op
+
+print(func2(inp))
+
+'''
+emp,salary 
+
+emp - id , name , details 
+sal  - emp id(fk) ,id, salary 
+
+select emp.name,sal.salary from emp left join sal on emp.id=sal.id  where sal.salary<max(sal.salary) limit 1 
+
+Metaclass, Meta programming , Method Resolution Order , Design Patterns 
+'''
+                
