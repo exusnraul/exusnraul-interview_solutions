@@ -290,4 +290,70 @@ select emp.name,sal.salary from emp left join sal on emp.id=sal.id  where sal.sa
 
 Metaclass, Meta programming , Method Resolution Order , Design Patterns 
 '''
+'''CGI'''
+
+
+i='{[]{()}}'
+
+lid_=['(',')','{','}','[',']']
+
+def balance(inp):
+    temp=list(inp)
+    print(temp)
+    for item in temp:
+        print(temp.count(item))
+        if temp.count(item)%2!=0:
+            print('Unbalanced')
+            
+    else:
+        print('Balanced')
+
+balance(i)
+# print(set(i))
+
+'''
+NeosoftTechologies
+Sourabh Soni16:43
+Class User(models.Model):
+    status = models.BooleanField(default=False)
+    
+
+Class UserProfile(models.Model):
+    age = models.IntegerField()
+    user = models.OneToOneField(User)
+
+
+Get all usersprofile for the users which have status True and age greater than 18 
+
+sign in funtionality
+'''
+from copy import copy
+
+
+L = [ {'x': 3}, {'x': 1}, {'x': 2} ]
+
+# Sort it based on x value in ascending order. Expected output: [ {‘x’: 1}, {‘x’: 2}, {‘x’: 3} ]
+
+
+
+def sort_(arr):
+    temp_lis=[i['x'] for i in arr]
+    temp_lis.sort()
+    op=[]
+    for i in temp_lis:
+        op.append({'x':i})
+    
+    return op
+
+print(sort_(L))
+
+'''
+Django in deep
+cookie , session 
+Login , signup
+authentication
+JWT authentication
+Django ORM questions
+Deployment of django projects
+'''
                 
