@@ -356,4 +356,52 @@ JWT authentication
 Django ORM questions
 Deployment of django projects
 '''
-                
+'''
+Ust Global
+Aws EC2,Image builder, ELB et.c
+'''
+ip = "aaabbbaabbcc"
+# op="3a3b2a2b2c"
+
+def func1(inp):
+    count=1
+    op=''
+    for i in range(len(ip)-1):
+        if inp[i]==inp[i+1]:
+            count+=1
+        # elif inp[]
+        else:
+            op=op+str(count)+inp[i]
+            count=1
+            # continue
+    op=op+str(count)+inp[i]
+    return op
+
+print(func1(ip)) 
+
+'''
+Happiest Minds
+OOps concept - Abstarct classes,static methods,django sessions,authentication,caching,architecture
+database concepts- Nosql vs SQL,How to optimise sql DB and No SQL , 
+project description , how to migrate to AWS and all
+Python questions
+'''
+#get rid of the duplicates withot using any internal function
+a=[1,1,2,3,4,5,6,6,7,7]
+def func1(arr):
+    count=1
+    op=[]
+    for i in range(len(a)-1):
+        if arr[i]==arr[i+1]:
+            arr.remove(arr[i])
+            arr.remove(arr[i+1])
+        
+        
+    return arr
+
+# print(func1(a))
+
+
+b=[x*x for x in a]    
+print(b)
+
