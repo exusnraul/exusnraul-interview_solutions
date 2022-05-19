@@ -404,4 +404,38 @@ def func1(arr):
 
 b=[x*x for x in a]    
 print(b)
-
+'''
+Aviso
+Hitesh Soneta
+Data structures concept
+'''
+#get the difference of degrees between minute and hour hand
+'''
+minute hand tranvels 6 deg every minute and Hour hand travels 30 deg every hour 
+de is the degree per minute
+a*30 is the hour hand multiplied by degree and b/2 is hour hand oves 1deg every 2 minutes
+'''
+#correct 
+a,b=2,40
+de=6
+op=(b*de)-(a*30+b//2)
+print(op)
+#this one is correct but can be modified to work with sorting algorithms like with pointer
+a=[10,15,20,19,40,30,55]
+b=100
+def func1(arr,num):
+    op={}
+    # arr.sort()
+    for i in range(len(arr)):
+        for j in range(i,len(arr)):
+            if arr[i]+arr[j] in range(num-5,num+5):
+                op[arr[i]+arr[j]]=[arr[i],arr[j]]
+    op1=[*op]
+    op1.sort()
+    diff=1000
+    min_=0
+    for i in op1:
+        temp=abs(i-num)
+        if diff>temp:
+            diff=temp
+            min_=i
