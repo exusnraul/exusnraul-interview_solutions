@@ -526,6 +526,43 @@ def solve(self, A, B):
             pass
         return temp
 
+'''
+Datacultr
+basic django questions, DRF, MODELS,ORM,and all
+crate a Django Rest API CRUD Application
+'''
+
+'''
+Comcast
+Django arch, mixins,middleware,framework,models,authentication classes,Templates
+Aws dynamodb -GSI,LST,TTL
+How to authorize an app
+
+'''
+#find two friends in the network connected through a friend
+
+network = {'friendships' :[['Marie', 'Lucas'], ['Lucas', 'Patsy'], ['Emma', 'Lucas'], ['Emma', 'Kevin'], ['Peter', 'Emma'], ['Peter', 'Lucas'], ['Peter', 'Julie'], ['Suzy', 'Tobias']]}
+pool = set(map(frozenset, network['friendships']))
+groups = []
+while pool:
+    groups.append(set(pool.pop()))
+    while True:
+        for candidate in pool:
+            if groups[-1] & candidate:
+                groups[-1] |= candidate
+                pool.remove(candidate)
+                break
+        else:
+            break
+print(groups)
+connected = {name: group for group in groups for name in group}
+print(connected)
+def is_connected_via_friendships_with(name1, name2):
+    return name2 in connected.get(name1, ())
+
+print(is_connected_via_friendships_with('Marie', 'Julie'))
+print(is_connected_via_friendships_with('Julie', 'Tobias'))
+print(is_connected_via_friendships_with('Julie', 'Frank'))
 
 
             
