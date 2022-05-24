@@ -564,6 +564,36 @@ print(is_connected_via_friendships_with('Marie', 'Julie'))
 print(is_connected_via_friendships_with('Julie', 'Tobias'))
 print(is_connected_via_friendships_with('Julie', 'Frank'))
 
+'''
+capgemini 
+Automation and testing
+concept about vm , hypervisior,firewall , lynux deployment 
+python - list vs tuple,set , frozen set uses ,
+'''
+# a=[x for x in range(10)]
+# print(a)
 
+# List = ['He', 'Loves', 'To', 'Code', 'In', 'Python']
+# import random
+# random.shuffle(List)
+# print(List)
+
+# a=(1,2,3,4,5,6,7)
+# b=frozenset(a)
+# print(a,b)
+# b.add(5)
+
+# import json
+# a={'a':1,'b':2}
+# b=json.dumps(a)
+# print(b)
+# c=json.loads(b)
+# print(type(a),type(b),type(c))
+
+# a='abcdefgh'
+# # print(a[:5:2])
+
+# a=[1,2,3,4]
+# print(a[:2])
             
 
