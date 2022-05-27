@@ -596,4 +596,44 @@ python - list vs tuple,set , frozen set uses ,
 # a=[1,2,3,4]
 # print(a[:2])
             
+''''
+Birla Soft
+AWS- EC@, Load Balancer,Auto Scaling, Subnet , Lambda, what to do for more than 15 minutes,sqs,sns,
+sql
+'''
 
+data={
+    "class_id": "test0001",
+    "students": [{
+        "student_id": "xxxx",
+        "student_name": "AAAABBBCCC",
+        "student_gpa": 123
+    }]
+}
+
+
+import pandas as pd
+import urllib
+import boto3
+import csv
+
+client=boto3.
+url='dummy.com/api'
+data=data
+print(type(data))
+
+with open('temp.csv',r+) as file:
+    file.write(data)
+    file.save()
+
+client.
+
+''''
+tableA=emp id,name,salary
+table2=empid,dept name
+join get all the cols sal gt than 10k desc
+'''
+
+SALARY='''
+select * from table1 as tb1 full outer join table2 as tb2  on tb1.emp_id=tb2.emp_id where tb1.salary>10,000
+'''
