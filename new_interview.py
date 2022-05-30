@@ -637,3 +637,25 @@ join get all the cols sal gt than 10k desc
 SALARY='''
 select * from table1 as tb1 full outer join table2 as tb2  on tb1.emp_id=tb2.emp_id where tb1.salary>10,000
 '''
+'''
+LNT TEch Services
+Memory Management in python,Multithreading , Multi processing, Pros cons , GIT questions
+'''
+'''
+Josephus problem
+There was a group of 41 Jewish soldiers surrounded by Roman army, and they didn't want to get caught. So, they sat down in a circle and came up with an algorithm. Everybody had a sword, and starting from person #1 in the circle, everybody will kill the next living person on the left. So, #1 will kill #2. #3 will kill #4, #5 will kill #6 and so on. The last living person will have to commit suicide to avoid getting caught by Romans.
+
+The soldier called Josephus preferred to be caught over committing suicide. So, in the group of 41 soldiers, he chose the location where he will be the last person living.
+
+Write a program to figure out, in a group of given N people, where should Josephus sit to live at the end of all internal killing.
+
+There is a mathematical solution to this problem. But, your program should use the brut force method to find the position. The output of the program may look like this:
+
+Solving Josephus problem for 5 soldiers:
+1 kills 2
+3 kills 4
+5 kills 1
+3 kills 5
+Josephus should sit on position# 3
+'''
+#Solutin Not provided as I cannot do it 
