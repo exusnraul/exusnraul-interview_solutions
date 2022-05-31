@@ -659,3 +659,39 @@ Solving Josephus problem for 5 soldiers:
 Josephus should sit on position# 3
 '''
 #Solutin Not provided as I cannot do it 
+
+'''
+Mouri Tech -- Rejected Average performance
+Python Basics,
+AWs Basics
+'''
+input=[2,5,6,2,3,6,5,6,8,0,9,6]
+#highest Repeated Number
+
+def func1(inp):
+    op={}
+    for item in inp:
+        if inp.count(item) not in op.keys():
+            op[inp.count(item)]=[item]
+        else:
+            if item not in op[inp.count(item)]:
+                op[inp.count(item)].append(item) 
+    a=[*op]
+    a.sort()
+    return (f' Total count is  {a[-1]} and number is {op[a[-1]]}')
+
+print(func1(input))
+
+# print(input.count(6))
+
+'''
+NTT data
+Devops concepts, How CI/CD works , DOCKER Kubernetes , Python basics,OS module,jsonpath ,API concepts,
+How to safeguard APIs,Deployment strategies,MongoDb questions, System Design Concepts and scaling DB
+
+tip - RabbitMQ,ELK,System Design concepts , Linux shell and SQL and Automation with Python,
+Mainly OS,Shutil,JSONpath and scripting
+'''
+mylist = ["a", "b", "a", "c", "c"]
+print(list(set(mylist)))
+mylist = list(dict.fromkeys(mylist))
