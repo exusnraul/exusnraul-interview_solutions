@@ -695,3 +695,20 @@ Mainly OS,Shutil,JSONpath and scripting
 mylist = ["a", "b", "a", "c", "c"]
 print(list(set(mylist)))
 mylist = list(dict.fromkeys(mylist))
+'''
+Suez Water Technologies
+Python basic questions , AWSbasicquestion , project architecture
+screening round
+'''
+inp='python'
+# print(inp[::-1])
+def func(inp):
+    op=''
+    temp=-1
+    lis_=list(inp)
+    for i in range(len(lis_)):
+        op+=lis_[temp]
+        temp-=1
+    return op
+
+print(func(inp))
