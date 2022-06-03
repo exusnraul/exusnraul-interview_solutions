@@ -712,3 +712,10 @@ def func(inp):
     return op
 
 print(func(inp))
+'''
+CERNER INTERVIEW
+Python -- Map , filter ,reduce with example. Iterator , Generator concepts with example and output data types type
+class vs static method 
+coding question - Use boto3 and perform CRUD on s3 bucket and Dynamodb 
+use map or filter and filter out a list having pure sq rt of numbers provided.
+'''
