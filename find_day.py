@@ -1,18 +1,21 @@
 '''
-•	Get all non-duplicate elements of list. Consider list is very large
-'''
-a=[1,2,22,3,4,4,5,3,3,23,2,3234,23,4324,23,12,3,123,12,'sdasd','asdasd','asds']*100000
-def nondups(arr):
-    try:
-        elements=list(set(arr))
-        elements_dict={}
-        for item in elements:
-            if  arr.count(item) not in elements_dict.keys():
-                elements_dict[arr.count(item)]=[item]
-            else:
-                elements_dict[arr.count(item)].append(item)
-        return elements_dict[1]
-    except KeyError as e:
-        print('No Non-Duplicate Items')
+•	Find Nth day from given day of the week. Take 2 input which are number of days to be count and second is from which day. Say count 23 days from “Thursday” which will be “Saturday”
+days=[ "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
 
-nondups(a)
+'''
+
+def counts(curr_day,days_to_count):
+    days=[ "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+    if curr_day in days:
+        a=len(days)-1
+        idx_cur=days.index(curr_day)
+        count=days_to_count//a
+        dig=days_to_count%7
+        if dig+idx_cur>a:
+            return days[idx_cur-dig]
+        else:
+            return days[idx_cur+dig]
+    else:
+        return ValueError('Input Expected Inputs')
+    
+counts('Thursday',4)
