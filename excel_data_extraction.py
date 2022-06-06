@@ -1,7 +1,7 @@
+import json
+import pandas as pd
 constants=[]
 def decoder_func():
-    import pandas as pd
-    import json
 
     file = 'WOConfigApp.xlsx'
     data = pd.ExcelFile(file)
