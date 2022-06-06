@@ -685,7 +685,7 @@ print(func1(input))
 # print(input.count(6))
 
 '''
-NTT data
+NTT
 Devops concepts, How CI/CD works , DOCKER Kubernetes , Python basics,OS module,jsonpath ,API concepts,
 How to safeguard APIs,Deployment strategies,MongoDb questions, System Design Concepts and scaling DB
 
