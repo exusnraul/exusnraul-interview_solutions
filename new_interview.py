@@ -719,3 +719,16 @@ class vs static method
 coding question - Use boto3 and perform CRUD on s3 bucket and Dynamodb 
 use map or filter and filter out a list having pure sq rt of numbers provided.
 '''
+'''
+employee - emp_id,dept_id,name,...
+department -  dept_id , dept_name
+
+select d.dept_name , count(e.name) as total_employee from employee as e left join department as d on e.dept_id=d.dept_id having e.dept_id = d.dept_id
+
+dept_name , count
+
+emp_id,emp_nm,dept_name,salary
+
+select dept_name , count(*) from emp group by (dept_name) having salary > 20,000
+
+'''
