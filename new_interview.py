@@ -732,3 +732,30 @@ emp_id,emp_nm,dept_name,salary
 select dept_name , count(*) from emp group by (dept_name) having salary > 20,000
 
 '''
+
+'''
+Caterpiller -- 3rd Party
+Api Based Questions,Rest Based questions, what is REST why it is used , Oauth and session Based authentication
+'''
+# Invert a dict
+inp={'a':1,'b':2,'c':3}
+
+op={val:key for key,val in inp.items()}
+
+print(op)
+#create a range generator 
+def gen(start,stop,step=1):
+    ranger=stop
+    count=0
+    try:
+        while ranger:
+            count+=1
+            yield count
+            if count==stop:
+                break
+    except error as e:
+        return None
+
+'''
+KPMG - IOT Services . AWS EC2,LAmbda,IOTCORE , Sensor type,IOT devices and uses
+'''
