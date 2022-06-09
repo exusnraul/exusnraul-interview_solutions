@@ -719,7 +719,55 @@ class vs static method
 coding question - Use boto3 and perform CRUD on s3 bucket and Dynamodb 
 use map or filter and filter out a list having pure sq rt of numbers provided.
 '''
+# import boto3
+
+# client=boto3.clint(s3)
+# bucket_name='test'
+# def test():
+#     file_name=
+
+import math
+inp=[1,4,5,8,9,20,25]
+filter((lambda x :  a for a in x if type(math.sqrt(a))==int),inp)
+
+
+@counter_decorator
+def adder_(arr):
+    op=[]
+    while arr:
+        min_=arr[0]
+        for items in arr:
+            if items<min_:
+                min_=items
+        arr.remove(min_)
+        op.append(min_)
+    return op
+arr=[5,4,9,4,5,8,9,7,2,5,4,7,8,9,6,2,4,7,8,7]*1000
+print(adder_(arr))
+def counter_decorator(func):
+    import time
+    def wraper(*args):
+        start=time.perf_counter()
+        func(*args)
+        end=time.perf_counter()
+        return func
+    return wraper
 '''
+Tech Mahindra
+Python basic questions  - python language, core and all list/tuple/set 
+'''
+x='RRR'
+
+op=lambda x: True if x[::-1]==x else False
+print(op(x))
+
+'''
+Sopra Steria
+AWS - Lambda whole (Env Variables,autoscale feature,Concurrency),Api gateway , security of API,S3 events ,Deployment problems with dependency
+Lambda versioning, Cloudwatch USes,Serverless advantages ,DynamoDB uses,Architecture,Advantages.
+'''
+'''
+KPMG
 employee - emp_id,dept_id,name,...
 department -  dept_id , dept_name
 
@@ -758,4 +806,9 @@ def gen(start,stop,step=1):
 
 '''
 KPMG - IOT Services . AWS EC2,LAmbda,IOTCORE , Sensor type,IOT devices and uses
+'''
+'''
+Suez - Final Round
+Raindrop electricity generation has previously been employed as a form of microgeneration to power houses and small water purification systems –
+ by capturing and funnelling rainwater to drive small turbines. 
 '''
