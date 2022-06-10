@@ -812,3 +812,29 @@ Suez - Final Round
 Raindrop electricity generation has previously been employed as a form of microgeneration to power houses and small water purification systems –
  by capturing and funnelling rainwater to drive small turbines. 
 '''
+
+'''
+CGI 
+AWS concepts
+'''
+def func1(file_name):
+    with open(file_name,'r') as file:
+        data = file.readlines()
+
+    print(data)
+    op={}
+    op_=[]
+    for items in data:
+        temp=items.split()
+        op_.extend(temp)
+
+
+    for item in op_:
+        if op_.count(item) not in op.keys():
+            op[op_.count(item)] = [item]
+        else:
+            op[op_.count(item)].append(item)
+
+    return op 
+
+print(func1('test.txt'))
