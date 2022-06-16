@@ -814,7 +814,7 @@ Raindrop electricity generation has previously been employed as a form of microg
 '''
 
 '''
-CGI 
+CGI -- next round Monday with client
 AWS concepts
 '''
 def func1(file_name):
@@ -838,3 +838,7 @@ def func1(file_name):
     return op 
 
 print(func1('test.txt'))
+'''
+NTT data - associate architect
+System Design ... Design a system Like Uber
+'''
