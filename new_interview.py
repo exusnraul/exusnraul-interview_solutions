@@ -842,3 +842,63 @@ print(func1('test.txt'))
 NTT data - associate architect
 System Design ... Design a system Like Uber
 '''
+'''
+Capgemini 
+AWS concepts-- Python Basic Questions,Django , Show OOps concepts with programming
+'''
+def func1(file_name):
+    with open(file_name,'r') as file:
+        data = file.readlines()
+
+    print(data)
+    op={}
+    op_=[]
+    for items in data:
+        temp=items.split()
+        op_.extend(temp)
+
+
+    for item in op_:
+        if op_.count(item) not in op.keys():
+            op[op_.count(item)] = [item]
+        else:
+            op[op_.count(item)].append(item)
+
+    return op 
+
+print(func1('test.txt'))
+'''
+Capgemini
+'''
+# class A():
+#     def __init__(self,a):
+#         self.a=a
+#     def func1(self):
+#         print(f'This is an arg={self.a}')
+
+# # class B():
+# #     pass
+    
+# class C(A):
+#     def func2(self,a):
+#         print('Inherited from A')
+#         A.func1(self.a)
+
+# test=C
+# test.func2(5)
+
+import time
+def deco(func):
+    def wrapper(*args):
+        start=time.perf_counter()
+        func(*args)
+        end=time.perf_counter()
+        print(f'Total time taken {end-start}')
+    return wrapper
+@deco
+def func1(n):
+    op=[]
+    for i in range(n):
+        op.append(i**2)
+
+func1(10000)
