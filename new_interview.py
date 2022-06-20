@@ -1015,20 +1015,23 @@ new_data=data['rows'][0]['elements']
 # print(new_data)
 op=[]
 
-
-# for items in new_data:
-#     temp_=[]
-#     fil_dt=''
-#     temp_1=items['distance']
-#     temp_2=items['duration']
-#     temp_.append(temp_1.values())
-#     temp_.append(temp_2.values())
-#     temp_.append(items['status'])
-#     # fil_dt='|'.join(temp_)
-#     # op.append(fil_dt)
+for items in new_data:
+    temp_=[]
+    fil_dt=''
+    temp_1=items['distance']
+    temp_2=items['duration']
+    temp_.extend([str(x) for x in temp_1.values()])
+    temp_.extend([str(x) for x in temp_2.values()])
+    temp_.append(items['status'])
+    fil_dt='|'.join(temp_)
+    op.append(fil_dt)
 # print(temp_)
-# print(op)
-#Not working code
+print(op)
+import pandas as pd
+df=pd.DataFrame(op)
+print(df)
+df.to_csv('line.csv')
+url='https://hackersandslackers.com/extract-data-from-complex-json-python/'
 def json_extract(obj, key):
     """Recursively fetch values from nested JSON."""
     arr = []
