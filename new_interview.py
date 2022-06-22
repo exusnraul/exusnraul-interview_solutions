@@ -1061,3 +1061,61 @@ print(json_extract(data,'text'))
 6|Naveen|3
 Show items with who are managers
 select t1.name from table t1 self join table t2 where t1.id=t2.manager_id '''
+'''
+Capgemini - Client Samsung Full Stack Interview
+Q-Questions about API and solutions to reading dfferent data types
+'''
+''''
+int arr -+ find largestcont subarray containing the sum
+'''
+
+
+# def func1(arr):
+#     temp=0
+#     for i in range(len(arr)):
+#         for j in range(i,len(arr)):
+#             if arr[i]<0:break
+#             else:
+
+# Python program to find maximum contiguous subarray
+ 
+def maxSubArraySum(a,size):
+     
+    max_so_far =a[0]
+    curr_max = a[0]
+     
+    for i in range(1,size):
+        curr_max = max(a[i], curr_max + a[i])
+        max_so_far = max(max_so_far,curr_max)
+         
+    return max_so_far
+ 
+# Driver function to check the above function
+a = [-2, -3, 4, -1, -2, 1, 5, -3]
+print("Maximum contiguous sum is" , maxSubArraySum(a,len(a)))
+
+'''
+Write a method to generate an infinite sequence of number. This should not cause memory overflow.
+'''    
+def func():
+    a=0
+    while True:
+        yield a
+        a+=1
+
+for i in func():
+    print(i, end=" ")
+# puzzles - 3 bulbs one try which one connected to which
+#             insect probem
+'''
+There is a room with a door (closed) and three light bulbs. Outside the room, there are three switches, connected to the bulbs. You may manipulate the switches as you wish, but once you open the door you can’t change them. Identify each switch with its bulb. All bulbs are in working condition.
+Solution:
+Let the bulbs be X, Y, and Z 
+Turn on switch X for 5 to 10 minutes. Turn it off and turn on switch Y. Open the door and touch the light bulb. 
+1. the light is on from the bulb, it is Y 
+
+Now we will check other two off bulbs 
+2. the bulb which is hot, it is X 
+3. the bulb which is cold, it is Z  
+'''
+
