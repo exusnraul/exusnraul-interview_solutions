@@ -1118,4 +1118,24 @@ Now we will check other two off bulbs
 2. the bulb which is hot, it is X 
 3. the bulb which is cold, it is Z  
 '''
+'''
+Genpact -Python + AWS+SQL
+Multithread,Multiprocess,Decorator,Web working,Api ,Statefull vs stateless
+'''
+# fibonacci series Generator
+def func_gen(n):
+    a,b=1,0
+    while n:
+        yield a
+        a,b=b,b+a
+        n-=1
 
+for i in func_gen(10):
+    print(i)
+''''
+emp - id,name,salary,city
+emp having sal more tn 10k each city count
+'''
+'''
+select city,count(*) from emp where salary > 10k group by city order by salary
+'''
