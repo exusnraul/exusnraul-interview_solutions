@@ -1139,3 +1139,30 @@ emp having sal more tn 10k each city count
 '''
 select city,count(*) from emp where salary > 10k group by city order by salary
 '''
+'''
+Infocepts L1 - The worst interview Till Data
+How to make your Apis Threadsafe , What is Multithreading and how it is implemented , What is OOps ,What is Polymorphism 
+Give Example,What is Api Gateway give steps to create APIs , What is Lambda trigger, 
+'''
+A0 = dict(zip(('a','b','c','d','e'),(1,2,3,4,5)))
+A1 = range(10)
+A2 = sorted([i for i in A1 if i in A0])
+A3 = sorted([A0[s] for s in A0])
+A4 = [i for i in A1 if i in A3]
+A5 = ''
+A6 = [[i,i*i] for i in A1]
+print(A0,A1,A2,A3,A4,A5,A6)
+
+'''    
+Write a query to retrieve the EmpFname and EmpLname in a single column as “FullName”. The first name and the last name must be separated with space.
+   
+Write a query to fetch all employees who also hold the managerial position.
+
+# '''
+# A0 ={'a': 1, 'c': 3, 'b': 2, 'e': 5, 'd': 4} # the order may vary
+# A1 = range(0, 10)
+# A2 = []
+# A3 = [1, 2, 3, 4, 5]
+# A4 = [1, 2, 3, 4, 5]
+# A5 =
+# A6 = [[0, 0], [1, 1], [2, 4], [3, 9], [4, 16], [5, 25], [6, 36], [7, 49], [8, 64], [9, 81]]
