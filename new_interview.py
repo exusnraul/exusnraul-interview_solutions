@@ -1166,3 +1166,63 @@ Write a query to fetch all employees who also hold the managerial position.
 # A4 = [1, 2, 3, 4, 5]
 # A5 =
 # A6 = [[0, 0], [1, 1], [2, 4], [3, 9], [4, 16], [5, 25], [6, 36], [7, 49], [8, 64], [9, 81]]
+
+'''
+Calsoft - Python Based Interview
+Basic to Advance Questions, OOPs concepts and prrofs
+'''
+l=[1,2,3,4,5]
+m=l
+# m.append(6)
+print(l)
+print(m)
+
+import copy
+m=copy.copy(l)
+
+m.append(6)
+print(l,m)
+l=10
+m=l
+m=10
+
+def deco(func):
+    def wrapper(s):
+        a=str.title()
+        func(s)
+        print(a)
+    return wrapper
+@deco
+def func(s):
+    print(s)
+
+func('my name is rahul')
+
+data="Nory was a Catholic because her mother was a Catholic,and Nory's mother was a Catholic because her father was a Catholic,and her father was a Catholic because his mother was a Catholic,or had been"
+
+def func2(data):
+    op={}
+    data=data.replace(',',' ')
+    string_=data.split()
+    for i in string_:
+        temp=string_.count(i)
+        if i not in op.keys():
+            op[i]=temp
+    return op
+
+print(func2(data))    
+#Create A Generator with iter and next method included
+class ManualGenerator():
+    def __init__(self,start,end):
+        self.start=start
+        self.end=end
+        self.op=[]
+    def op(self):
+        a=self.start
+        while True:
+            a+=1
+            self.op.append(a)
+            if a==self.end:break
+    def __iter__(self):
+        self.op
+
