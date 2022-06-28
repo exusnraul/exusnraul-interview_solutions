@@ -1225,4 +1225,12 @@ class ManualGenerator():
             if a==self.end:break
     def __iter__(self):
         self.op
+'''
+UST Global-- Django related questions
+Router, DRF framework,API building techniques
+'''
+l = [2,4,8,16,32, 7, 3, 9, 64, 27, 81, 39];
 
+# figure out the pythagorean triplet from the above list
+# a2 + b2 = c2
+# Not solved
