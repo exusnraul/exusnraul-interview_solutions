@@ -1234,3 +1234,21 @@ l = [2,4,8,16,32, 7, 3, 9, 64, 27, 81, 39];
 # figure out the pythagorean triplet from the above list
 # a2 + b2 = c2
 # Not solved
+'''
+Asteria Aerospace -- Basic Django Questions, Middlewares,Authentication,Manage.py advance questions
+Basic Python questions
+'''
+
+lis=[1,2,3,4,5]
+a=list(map(lambda x:x*x , lis))
+print(a)
+
+lis2=[1,2,3,4,5,6,7,8,9]
+
+b=list(filter(lambda x:x if x%2==0 else None,lis2))
+print(b)
+
+c='quick brown fox jumps over a lazy dog'
+d='quick {0} fox {1} over a {2} dog'.format('brown','{}','lazy')
+op=d.format('jumps')
+print(d)
