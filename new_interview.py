@@ -1252,3 +1252,46 @@ c='quick brown fox jumps over a lazy dog'
 d='quick {0} fox {1} over a {2} dog'.format('brown','{}','lazy')
 op=d.format('jumps')
 print(d)
+'''
+Nokia - Python Basic Questions
+List,tuples,sets,dicts
+Feedback - No practical Experience
+SQL Update,insert and select methods
+'''
+'''
+CGI- Python Basics , List,Tuple,set,DB,Django,REST,AWS and all
+'''
+import copy
+a=[1,2,3,4,5,[7,8,9]]
+c=copy.copy(a)
+
+c[5].append(6)
+print(a,c)
+
+for i in range(10):
+    # for j in range(i):
+    print('* '*i)
+
+'''
+[4:30 PM] Hosagowdar, Siddanagouda B
+Input: Toonandmoon
+Max is 'o'
+Input: MeenaReen
+Max is 'e'
+'''
+ip='Toonandmoon'
+def func1(inp):
+    a=list(inp)
+    op={}
+    for i in a:
+        temp=a.count(i)
+        if temp not in op.keys():
+            op[temp]=[i]
+        else:
+            op[temp].append(i)
+    op1=list(set(op[max([x for x in op.keys()])]))
+    return f'Max is:{op1[0]}'
+
+print(func1(ip))
+
+op=user.filter(date='ddmmyy')
