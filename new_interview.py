@@ -1295,3 +1295,35 @@ def func1(inp):
 print(func1(ip))
 
 op=user.filter(date='ddmmyy')
+'''
+Mphasis - Python# Online Python compiler (interpreter) to run Python online.
+# Write Python 3 code in this online editor and run it.
+
+1.top two maximum number without using predefined function 
+2. highest repeated character and its count in a string
+'''
+def func1(arr):
+    maximum=arr[0]
+    op=[]
+    for i in arr:
+        if i>maximum:
+            maximum=i
+            op.append(maximum)
+            arr.remove(maximum)
+    return f'The maximum two numbers are {op[0]} and {op[1]}'
+ip=[4,6,2,9,2,5,9]
+print(func1(ip))
+
+def func2(input):
+    op={}
+    ip=input.split()
+    for i in ip:
+        temp=ip.count(i)
+        if temp not in op.keys():
+            op[temp]=[i]
+        else:
+            op[temp].append(i)
+    return op[max([*op])]
+input='My Name is Name Rahul'
+print(func2(input))
+
