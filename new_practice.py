@@ -26,3 +26,36 @@ def adding_numbers(n):
 
 print(adding_numbers(327))
 
+
+
+import time
+
+def timeit(func):
+    def wrapper(*args, **kwargs):
+        start_time = time.time()
+        result = func(*args, **kwargs)
+        end_time = time.time()
+        print(f"Function {func.__name__} took {end_time - start_time} seconds to execute")
+        return result
+    return wrapper
+
+@timeit
+def func():
+    lis=[]
+    for i in range(1000):
+        lis.append(i)
+    return lis
+
+func()
+
+#exception Handling
+try:
+    x = int(input("Enter a number: "))
+    y = 10 / x
+except ZeroDivisionError:
+    print("Error: Cannot divide by zero")
+else:
+    print("Result: ", y)
+finally:
+    print("Execution complete")
+
