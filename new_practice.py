@@ -59,3 +59,41 @@ else:
 finally:
     print("Execution complete")
 
+def primy(i,j):
+    max_=max(i,j)
+    min_=min(i,j)
+    op={'prime':[]}
+    for k in range(min_,max_):
+        for l in range(2,k):
+            if k%l ==0:
+                break
+        else:
+            op['prime'].append(k)
+            
+    return op
+
+class Animal:
+    def __init__(self, name, species):
+        self.name = name
+        self.species = species
+
+    def make_sound(self):
+        pass
+
+# Define the child class that inherits from the parent class
+class Dog(Animal):
+    def __init__(self, name, breed):
+        super().__init__(name, species="Dog")
+        self.breed = breed
+
+    def make_sound(self):
+        return "Woof!"
+
+# Create an instance of the child class
+my_dog = Dog("Fido", "Golden Retriever")
+
+# Call methods on the instance of the child class
+print(my_dog.name)      # Output: Fido
+print(my_dog.species)   # Output: Dog
+print(my_dog.breed)     # Output: Golden Retriever
+print(my_dog.make_sound())  # Output: Woof!
