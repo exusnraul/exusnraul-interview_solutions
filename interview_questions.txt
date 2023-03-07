@@ -57,7 +57,7 @@ generators
 pickling and unpickling?
 Private variables in python write sample class and demonstrate
 write sample code for multiple inheritance
-
+stack, queues , binary tree , search and sort algoriths , hash maps , linked lists 
 
 Django:-
 Django architecture( how request and response cycle works in python)
@@ -66,7 +66,8 @@ Custom exceptions in Django
 middle-wares in Django
 function based and class based views
 request and response cycle in django
-
+Metaclass
+creating a django project from scratch
 
 Docker:-
 docker , docker compose , dockerfile
