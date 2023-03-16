@@ -1,4 +1,4 @@
-i='{[]{()}}'
+i='{[]{()}}}}'
 def balace_brace(inp):
     ip=list(inp)
     opn_br=['(','{','[']
@@ -17,4 +17,4 @@ def balace_brace(inp):
         return('False')
 
 
-balace_brace(i)
+print(balace_brace(i))

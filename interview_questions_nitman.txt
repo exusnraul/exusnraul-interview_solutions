@@ -1,0 +1,73 @@
+1. List vs Tuple
+2. What is Decorator? Explain it with example
+3. Difference Between List Comprehension and Dict Comprehension
+4. How is Memory Managed In Python?
+5. Difference Between Generators and Iterators
+6. What is 'init' keyword in python?
+7. Difference Between Modules and Packages in Python
+8. Difference Between Range and Xrange?
+9. What are Generators. Explain it with example.
+10. What are inbuild data types available in Python -OR Explain Mutable and Immutable data Types
+Commonly Asked Questions (11-30 Ques-Ans)
+11. Explain Ternary Operator in Python?
+12. What is Inheritance In Python
+13. Difference Between Local Variable and Global Variable in Python
+14. Explain Break, Continue and Pass Statement
+15. What is 'self' keyword in python?
+16. Difference Between Pickling and Unpickling?
+17. Explain Function of List, Set, Tuple or Dictionary?
+18. What are Python Iterators?
+19. Explain type conversion in python. (int(), float(), ord(), oct(), str(), hex(), eval() etc.)
+20. What does *args and **kwargs mean? expain
+21. What is "Open" and "With" statement in python?
+22. Different ways to read and write in a file in python?
+23. What is Pythonpath?
+24. How exception handled in Python. [Try, Except, Else And Finally Block]
+25. Difference Between Python 2.0 & Python 3.0
+26. What is PIP in python
+27. Where is Python used?
+28. How to use F string and format or replacement operator in Python?
+29. How to get list of all keys in a dictionary?
+30. Difference Between Abstration and Encapsulation.
+Tricky Questions (31-40 Ques-Ans)
+31. Does Python support multiple inheritence. (Diamond Problem)
+32. How to initialize empty List, Tuple, Dict or Set?
+33. What are .py and .pyc files in Python
+34. How slicing works in string manupulation. Explain [::-1]
+35. Can you concatenate two tuples? How is it even possible to concatenate two tuples, since Tuple is Immutable data type.
+36. Difference Between Python Arrays and Lists
+37. Difference Between a, __a, __a_ in python?
+38. How to read multiple value from single input? --- By Split()
+39. How to copy and delete a dictionary
+40. Difference Between Anonymous and Lambda function
+Advanced/Rarely Asked Questions (41-52 Ques-Ans)
+41. How to achieve Multiprocessing and Multithreading in python?
+42. What is GIL. Explain
+43. How class and object created in python?
+44. Explain Namespace and its types in python
+45. Explain Recursion by Reversing a list.
+46. What are Unittests in Python
+47. How to use Map, filter and reduce functions in python?
+48. Difference Between Shallow copy and deep copy
+49. How an object be copied in python
+50. What does term MONKEY PATCHING refer to in python?
+51. What is operator overloading & Dunder Method.
+52. Draw Some Pattern/Graphs.
+
+Extra question:-
+53. diff between list and dict.
+54. Static method vs Class Method.
+55. can we use a tuple / list as a key in dict.
+56. When we use list/Tuple.
+57. append vs extend.
+58. what if we don't use with statement?
+59. why python is called a dynamically typed language or what is duck Typing.
+60. Python Interpreted Language? why?
+61. What is abstraction and what is Abstarct classes. Example
+62. Lambda with Example
+63. Decorator. Custmised decorator and parameterised decorator. example
+64. Add two nums wit a decorator.
+65. call by ref or call by value?
+66. MRO or Method Resolution order.
+67 . OOPs concept in depth.
+68. python fully obj oriented Language?
